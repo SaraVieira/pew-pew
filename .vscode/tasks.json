@@ -1,0 +1,8 @@
+{
+  "label": "build",
+  "group": "build",
+  "type": "shell",
+  "command": "scons",
+  "args": ["-j $(nproc)"],
+  "problemMatcher": "$msCompile"
+}
