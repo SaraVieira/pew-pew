@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Misc/pixelFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Stars.tscn" type="PackedScene" id=2]
+[ext_resource path="res://StartMenu.gd" type="Script" id=3]
+
+[node name="StartMenu" type="Node"]
+script = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="CenterContainer"]
+margin_left = 109.0
+margin_top = 79.0
+margin_right = 211.0
+margin_bottom = 100.0
+custom_fonts/font = ExtResource( 1 )
+text = "Press Space to start
+Press Escape to quit"
+align = 1
+valign = 1
+
+[node name="Stars" parent="." instance=ExtResource( 2 )]

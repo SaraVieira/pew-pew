@@ -10,8 +10,13 @@ config_version=4
 
 [application]
 
-config/name="Soace Shooter"
-run/main_scene="res://World.tscn"
+config/name="PewPew"
+run/main_scene="res://StartMenu.tscn"
+
+[autoload]
+
+BackgroundMusic="*res://BackgroundMusic.tscn"
+SaveAndLoad="*res://SaveAndLoad.gd"
 
 [display]
 
